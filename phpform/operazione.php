@@ -1,7 +1,7 @@
 <?php
 $primo = $_POST["primo"];
 $secondo = $_POST["secondo"];
-$operando = $_POST["operando"];
+$operando = $_POST["operation"];
 
 switch ($operando){
     case "sum":
@@ -17,6 +17,6 @@ switch ($operando){
         $risultato = $primo/$secondo;
         break;
 }
-echo '$primo $operando $secondo = $risultato ';
+echo "$primo $operando $secondo = $risultato ";
 
 ?>

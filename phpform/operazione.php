@@ -4,16 +4,16 @@ $secondo = $_POST["secondo"];
 $operando = $_POST["operation"];
 
 switch ($operando){
-    case "sum":
+    case "+":
         $risultato = $primo+$secondo;
         break;
-    case "sub":
+    case "-":
         $risultato = $primo-$secondo;
         break;
-    case "mol":
+    case "x":
         $risultato = $primo*$secondo;
         break;
-    case "div":
+    case "/":
         $risultato = $primo/$secondo;
         break;
 }

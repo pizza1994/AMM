@@ -12,6 +12,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
+        if(!empty($_REQUEST["primo"])&&!empty($_REQUEST["secondo"])){
         $primo = $_REQUEST["primo"];
         $secondo = $_REQUEST["secondo"];
         $operando = $_REQUEST["operation"];
@@ -39,6 +40,7 @@ and open the template in the editor.
         }
         else{
             echo "Qualcosa non va";
+        }
         }
 
         ?>

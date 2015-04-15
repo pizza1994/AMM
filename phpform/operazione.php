@@ -35,14 +35,30 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
     <head>
         <meta charset="UTF-8">
         <title></title>
     </head>
     <body>
-        <form action="index.html" method="get">
-            <input type="submit" value="Riprova">
+        <form action="operazione.php" method="post">
+            Primo operando <br>
+            <input type="text" name="primo"><?= $_REQUEST["primo"] ?>"/>
+            <br>
+            Secondo operando <br>
+            <input type="text" name="secondo"><?= $_REQUEST["secondo"] ?>"/>
+            <br>
+            <input type="radio" name="operation" value="+">Somma<br>
+            <input type="radio" name="operation" value="-">Sottrazione<br>
+            <input type="radio" name="operation" value="x">Moltiplicazione<br>
+            <input type="radio" name="operation" value="/">Divisione<br>
+            <input type="submit" value="Submit">
         </form>
         <?php
         // put your code here

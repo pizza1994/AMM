@@ -7,7 +7,7 @@ $val1= filter_var($primo, FILTER_VALIDATE_FLOAT, FILTER_NULL_ON_FAILURE);
 $val2= filter_var($secondo, FILTER_VALIDATE_FLOAT, FILTER_NULL_ON_FAILURE);
 
 if($val1&&$val2){
-    echo("entra");
+    
     switch ($operando){
         case "+":
             $risultato = $primo+$secondo;
@@ -29,3 +29,23 @@ else{
 }
 
 ?>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <form action="index.html" method="get">
+            <input type="submit" value="Submit">
+        </form>
+        <?php
+        // put your code here
+        ?>
+    </body>
+</html>

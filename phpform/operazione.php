@@ -42,7 +42,7 @@ and open the template in the editor.
     </head>
     <body>
         <form action="index.html" method="get">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Riprova">
         </form>
         <?php
         // put your code here

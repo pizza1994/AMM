@@ -36,15 +36,20 @@ and open the template in the editor.
                     $risultato = $primo/$secondo;
                     break;
             }
-   
+            echo "$primo $operando $secondo = $risultato ";
+        }
+        else{
+            echo "Qualcosa non va";
+        }
+        }
 
         ?>
         <form action="operazione.php" method="post">
             Primo operando <br>
-            <input type="text" name="primo"><?= $_REQUEST["primo"] ?>"/>
+            <input type="text" name="primo" value=""<?= $_REQUEST["primo"] ?>/>
             <br>
             Secondo operando <br>
-            <input type="text" name="secondo"><?= $_REQUEST["secondo"] ?>"/>
+            <input type="text" name="secondo" value="<?= $_REQUEST["secondo"] ?>"/>
             <br>
             <input type="radio" name="operation" value="+">Somma<br>
             <input type="radio" name="operation" value="-">Sottrazione<br>
@@ -52,14 +57,6 @@ and open the template in the editor.
             <input type="radio" name="operation" value="/">Divisione<br>
             <input type="submit" value="Submit">
         </form>
-        <?php
-           echo "$primo $operando $secondo = $risultato ";
-        }
-        else{
-            echo "Qualcosa non va";
-        }
-        }
-        ?>
-        
+
     </body>
 </html>

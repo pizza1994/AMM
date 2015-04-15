@@ -46,7 +46,7 @@ and open the template in the editor.
         ?>
         <form action="operazione.php" method="post">
             Primo operando <br>
-            <input type="text" name="primo" value=""<?= $_REQUEST["primo"] ?>/>
+            <input type="text" name="primo" value="<?= $_REQUEST["primo"] ?>"/>
             <br>
             Secondo operando <br>
             <input type="text" name="secondo" value="<?= $_REQUEST["secondo"] ?>"/>

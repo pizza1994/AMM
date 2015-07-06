@@ -4,21 +4,12 @@
         const admin = 1;
         const utente = 2;
         
-        private $email;
+        
         private $password;
-        private $nome;
-        private $cognome;
+        private $username;
+        
         
         public function _construct(){
-        }
-        
-        public function setEmail($email){
-            $this->email = $email;
-            return true;
-        }
-        
-        public function getEmail(){
-            return $this->email;
         }
         
         public function setPassword($password){
@@ -30,24 +21,14 @@
             return $this->password;
         }
         
-        public function setNome($nome){
+        public function setUserName($username){
             $this->nome = nome;
             return true;
         }
         
-        public function getNome(){
-            return $this->nome;
+        public function getUserName(){
+            return $this->username;
         }
-        
-        public function setCognome($cognome){
-            $this->nome = nome;
-            return true;
-        }
-        
-        public function getCognome(){
-            return $this->cognome;
-        }
-        
         
     }
 ?>
